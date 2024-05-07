@@ -430,3 +430,85 @@ header{
 
 /* RESPONSE */
 
+@media (max-width: 1440px){
+
+}
+
+@media (max-width: 1300px){
+    header{
+        padding: 18px 40px
+    }
+    section{
+        padding: 40px 30px;
+    }
+}
+ 
+@media (max-width: 1250px){
+    header{
+        padding: 13px 30px
+    }
+    section{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 1000px){
+    .home{
+        background-position: left;
+    }
+    .form-container form{
+        bottom:0.2rem;
+        left: 40px;
+    }
+}
+
+
+@media (max-width: 805px){
+    header{
+        padding: 11px 40px;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .signup{
+        display: none;
+    }
+    .text h1{
+        font-size: 2.5rem;
+
+    }
+    .home{
+        grid-template-columns:1fr;
+    }
+    .form-container form{
+        position: unset;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.2s ease;
+        text-align: left;
+    }
+
+    .navbar a{
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+    }
+
+    .navbar a:hover {
+        color: #fff;
+        background: var(--main-color);
+        border: none;
+    }
+    .navbar a::after{
+        display: none;
+    }
+}
