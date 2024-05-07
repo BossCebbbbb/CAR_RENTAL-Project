@@ -108,7 +108,7 @@ header{
  width: 100%;
  min-height: 100vh;
  position: relative;
- background: url(img/Car\ Website\ –\ 1@2x.png);
+ background: url(img/burat.png);
  background-repeat: no-repeat;
  background-position: center right;
  background-size: cover;
@@ -120,7 +120,7 @@ header{
 .text h1{
     font-size: 4.5rem;
     letter-spacing: 2px;
-    margin-top: -120px;
+    margin-top: -50px;
 }
 
 .text span{
@@ -155,6 +155,10 @@ header{
     background: #fff;
     padding: 20px;
     border-radius: 0.5rem;
+}
+
+.form-container img{
+    width: 100%;
 }
 
 .input-box{
@@ -574,3 +578,16 @@ header{
     }
 }
 
+@keyframes floatMovement {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Apply the animation to the image */
+  #animatedImg {
+    animation: floatMovement 3s ease-in-out infinite; /* Adjust animation duration and timing */
+  }
