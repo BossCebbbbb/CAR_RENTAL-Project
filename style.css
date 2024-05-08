@@ -32,6 +32,7 @@ html::-webkit-scrollbar-thumb{
 }
 section{
     padding: 50px 100px;
+    height: 100vh;
 }
 header{
     position: fixed;
@@ -450,14 +451,23 @@ header{
  
 @media (max-width: 1250px){
     header{
-        padding: 13px 30px
+        padding: 13px 50px
     }
     section{
         padding: 30px 20px;
     }
 }
 
+@media (max-width: 1150px){
+    header{
+        padding: 13px 60px
+    }
+}
+
 @media (max-width: 1000px){
+    header{
+        padding: 11px 50px;
+    }
     .home{
         background-position: left;
     }
@@ -470,7 +480,10 @@ header{
 
 @media (max-width: 805px){
     header{
-        padding: 11px 40px;
+        padding: 11px 50px;
+    }
+    .text h1{
+        margin-top: 0px;
     }
     #menu-icon{
         display: initial;
@@ -484,6 +497,7 @@ header{
     }
     .home{
         grid-template-columns:1fr;
+        margin-top: 10px;
     }
     .form-container form{
         position: unset;
@@ -550,12 +564,17 @@ header{
         width: 284px;
     }
 
+
 }
 
-@media (max-width: 355px) {
+@media (max-width: 363px) {
     header {
         padding: 6px 14px;
     }
+    .home{
+        margin-top: 10px;
+    }
+    
     .logo img{
         width: 30px;
     }
@@ -575,6 +594,18 @@ header{
     }
     .services_container{
         grid-template-columns: repeat(auto-fit,minmax(254px,auto));
+    }
+    #submitted{
+        display: none;
+    }
+
+    #animatedImg{
+        position: absolute;
+        top: 60px;
+        width: 80%;
+        align-items: center;
+        display: flex;
+        
     }
 }
 

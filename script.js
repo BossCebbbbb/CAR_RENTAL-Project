@@ -30,5 +30,3 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal('.reviews-container .box',{delay: 800, origin: 'top'});
 });
 
-
-reviews-container
